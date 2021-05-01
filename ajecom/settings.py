@@ -72,9 +72,8 @@ ROOT_URLCONF = 'ajecom.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ["C:/users/Abhishek Jhariya/Documents/Dev/env/ajecom/templates",
-        "C:/users/Abhishek Jhariya/Documents/Dev/env/ajecom/templates",
-        "C:/users/Abhishek Jhariya/Documents/Dev/env/ajecom/templates/me"],
+        'DIRS': ["C:/users/Abhishek Jhariya/Documents/Dev/env/ajecom/templates", "C:/users/Abhishek Jhariya/Documents/Dev/env/ajecom/templates/me"
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -139,8 +138,8 @@ USE_TZ = True
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
 STATIC_URL = '/static/'
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
