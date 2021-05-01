@@ -72,8 +72,7 @@ ROOT_URLCONF = 'ajecom.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ["C:/users/Abhishek Jhariya/Documents/Dev/env/ajecom/templates", "C:/users/Abhishek Jhariya/Documents/Dev/env/ajecom/templates/me"
-        ],
+        'DIRS': ["C:/users/Abhishek Jhariya/Documents/Dev/env/ajecom/templates", "C:/users/Abhishek Jhariya/Documents/Dev/env/ajecom/templates/me"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
