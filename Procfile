@@ -1,1 +1,1 @@
-web: gunicorn ajecom.wsgi --log-file -
+web: gunicorn ajecom.wsgi 
