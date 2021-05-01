@@ -141,6 +141,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
 STATIC_URL = '/static/'
 <<<<<<< HEAD
 =======
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 >>>>>>> 13faf66d342ad39ab74f8a0ada30cc24bc988f3f
 
 # Default primary key field type
