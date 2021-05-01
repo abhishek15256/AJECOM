@@ -1,1 +1,2 @@
-web: gunicorn ajecom.wsgi 
+release: python manage.py migrate 
+web: gunicorn ajecom.wsgi --log-file-
