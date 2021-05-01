@@ -94,28 +94,47 @@
           {% if request.user.is_authenticated %}
           <li class="nav-item">
             <a class="nav-link waves-effect" href="/cart" >
-              <span class="badge red z-depth-0 mr-0">1</span>
+              <span class="badge red z-depth-0 mr-0">0</span>
               <i class="fas fa-shopping-cart"></i>
               <span class="clearfix d-none d-sm-inline-block"> Cart </span>
             </a>
           </li>
 
-          <li class="nav-item">
-            <a class="nav-link border border-light rounded waves-effect" href="{% url 'account_logout' %}"target="_blank">
-              <span class="clearfix d-none d-sm-inline-block"> Logout </span>
+          <li class="nav-item ">
+            <a class="nav-link waves-effect" href="{% url 'account_logout' %}">
+              <strong class="red-text">Log Out</strong>
             </a>
           </li>
           {% else %}
-          <li class="nav-item">
-            <a class="nav-link border border-light rounded waves-effect" href="{% url 'account_login' %}"target="_blank">
-              <span class="clearfix d-none d-sm-inline-block"> Login </span>
+          <li class="nav-item ">
+            <a class="nav-link waves-effect" href="{% url 'account_login' %}">
+              <strong class="blue-text" class="border">Login</strong>
             </a>
-          </li>  
-          <li class="nav-item">
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link waves-effect" href="{% url 'account_signup' %}">
+              <strong class="red-text">Sign Up</strong>
+            </a>
+          </li>
+
+
+          {% comment %} <li class="nav-item">
+            <button class="btn btn-lg btn-sm" style="background-color:transparent;">
+              <a href="{% url 'account_login' %}">
+                Login
+              </a>
+            </button>
+          </li> {% endcomment %}
+
+          
+
+          
+          {% comment %} <li class="nav-item">
             <a class="nav-link border border-light rounded waves-effect" href="{% url 'account_signup' %}" target="_blank">
               <span class="clearfix d-none d-sm-inline-block"> Signup </span>
             </a>
-          </li>        
+          </li>         {% endcomment %}
           {% endif %}
         </ul>
       </div>
