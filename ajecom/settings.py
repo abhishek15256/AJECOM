@@ -11,9 +11,6 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import os
 from pathlib import Path
-import django_heroku
-import dj_database_url
-
 
 
 BASE_DIR = os.path.dirname(os.path.dirname(
@@ -32,9 +29,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-^1#s9kl36%s439irwd4gou6&-1n^=-mqtt1a)7bzouykp%(tb)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ajeco.herokuapp.com']
 
 
 # Application definition
@@ -156,7 +153,7 @@ AUTHENTICATION_BACKENDS = [
 LOGIN_REDIRECT_URL = "/"
 CRISPY_TEMPLATE_PACK = "bootstrap4"
 
-MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media_root').replace('\\', '/')
 MEDIA_URL = "/media/"
 
-django_heroku.settings(locals())
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
