@@ -13,7 +13,7 @@ class Item(models.Model):
     price = models.CharField(max_length=50)
     category = models.CharField(choices = CATEGORY_CHOICES, max_length=100)
     slug = models.SlugField()
-    description = models.TextField(max_length=500)
+    description = models.TextField(max_length=3000)
     image = models.ImageField()
     
 

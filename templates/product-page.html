@@ -132,7 +132,7 @@
             </div>
 
             <p class="lead">
-              <span>${{ object.price }}</span>
+              <span>{{ object.price }}</span>
             </p>
 
             <p class="lead font-weight-bold">Description</p>
@@ -148,11 +148,11 @@
 
             </form> {% endcomment %}
 
-            <a href= "{{object.get_add_to_cart_url}}" class="btn btn-primary btn-md my-0 p" >
+            <a href= "{{object.get_add_to_cart_url}}" class="btn btn-primary btn-md my-2 p" >
               Add to cart
               <i class="fas fa-shopping-cart ml-1"></i>
             </a>
-            <a href= "{{object.get_remove_from_cart_url}}" class="btn btn-danger btn-md my-0 p" >
+            <a href= "{{object.get_remove_from_cart_url}}" class="btn btn-danger btn-md my-2 p" >
               Remove from cart
               <i class="fas fa-shopping-cart ml-1"></i>
             </a>            
